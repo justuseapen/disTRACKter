@@ -1,4 +1,6 @@
 DisTRACKter::Application.routes.draw do
+  resources :sessions
+
   devise_for :users
   root "pages#home"
   get "about" => "pages#about"
